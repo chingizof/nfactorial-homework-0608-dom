@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+
+    background-color: rgb(0,0,0,0.9);
+}
+
+.fluid-img{
+    width: 100%;
+    max-width: 160px;
+    height: auto;
+    align-self: right;
+}
+
+.cover {
+    width: 100%;
+    height:100%;
+    justify-items: right;
+}/* спросить у ментора как подвинуть  картинку вправо*/
+
+.media-btn {
+    height:30px;
+    width: 30px;
+    justify-content: space-around;
+    flex: 1;
+} /* как поместить кнопки на равное расстояние?*/
+
+.controls {
+    flex: 1;
+    background: gray;
+    border-radius: 20px;
+    border: 5px solid black;
+    width: 160px;
+    justify-content: space-evenly;
+}
+
+.playbox {
+    flex: 1;
+    width: 50%;
+    float: left;
+    background-color: rgb(9, 42, 1);
+}
+
+.video-section {
+    width: 50%;
+    flex: 1;
+    float: right;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: aliceblue;
+}
+
+#video-night {
+    width: 300px;
+}
+
