@@ -4,6 +4,9 @@ const forward = document.querySelector("#forward");
 const audio = document.querySelector("#audio");
 const songName = document.querySelector("#song-name");
 const video = document.querySelector("#video-night");
+const photo = document.querySelector("#cover")
+const volumeup = document.querySelector("#volumeup")
+const volumedown = document.querySelector("#volumedown")
 
 let playImg = "./assets/play.png";
 let pauseImg = "./assets/pause.png";
@@ -14,17 +17,17 @@ const songList = [
     {
         name: "Бродяга",
         source: "./assets/brodyaga.mp3",
-        cover: "./assets/images/chillhop.jpg"
+        cover: "./assets/brodyaga.jpeg"
     },
     {
         name: "В Темноте",
         source: "./assets/korzh.mp3",
-        cover: "./assets/images/chillhop-2.jpg"
+        cover: "./assets/maxkorzh.jpeg"
     },
     {
         name: "Let It Be",
         source: "./assets/beatles.mp3",
-        cover: "./assets/images/chillhop-3.jpg"
+        cover: "./assets/letitbe.jpeg"
     },
 ];
 
@@ -32,11 +35,19 @@ let isPlaying = true;
 let songIndex = 0
 
 function forwardHandler() {
-    songIndexs = (songIndexs + 1)%songList.length
-    audio.src = songList[songIndex]
+    songIndex = (songIndex + 1)%songList.length
+    audio.src = songList[songIndex].source
     songName.innerHTML = songList[songIndex].name
+    photo.src = songList[songIndex].cover
 }
 
+function volumeUp() {
+
+}
+
+function volumeDown() {
+    
+}
 
 function playerHandler() {
     if (isPlaying) {

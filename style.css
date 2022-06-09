@@ -1,7 +1,5 @@
 body{
     margin: 0;
-
-    background-color: rgb(0,0,0,0.9);
 }
 
 .fluid-img{
@@ -11,10 +9,12 @@ body{
     align-self: right;
 }
 
-.cover {
+#cover {
     width: 100%;
     height:100%;
     justify-items: right;
+    border-radius:90px;
+    border: 5px solid #4b2b31;
 }/* спросить у ментора как подвинуть  картинку вправо*/
 
 .media-btn {
@@ -26,30 +26,32 @@ body{
 
 .controls {
     flex: 1;
-    background: gray;
+    background: #6f3637;
     border-radius: 20px;
-    border: 5px solid black;
-    width: 160px;
+    border: 5px solid #4b2b31;
+    width: 171px;
     justify-content: space-evenly;
 }
 
 .playbox {
     flex: 1;
-    width: 50%;
+    width: 65%;
+    height: 900px;
     float: left;
-    background-color: rgb(9, 42, 1);
+    background-color: rgb(23, 33, 42);
+    vertical-align: middle;
 }
 
 .video-section {
-    width: 50%;
+    width: 35%;
+    height: 900px;
     flex: 1;
     float: right;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: aliceblue;
+    background-color: #00203FFF;
 }
 
 #video-night {
-    width: 300px;
+    width: 100%;
+    align-self: center;
 }
 
