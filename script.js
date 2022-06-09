@@ -7,6 +7,7 @@ const video = document.querySelector("#video-night");
 const photo = document.querySelector("#cover")
 const volumeup = document.querySelector("#volumeup")
 const volumedown = document.querySelector("#volumedown")
+const headName = document.querySelector("#header-name")
 
 let playImg = "./assets/play.png";
 let pauseImg = "./assets/pause.png";
@@ -39,6 +40,7 @@ function forwardHandler() {
     audio.src = songList[songIndex].source
     songName.innerHTML = songList[songIndex].name
     photo.src = songList[songIndex].cover
+    headName.innerHTML = songList[songIndex].name
 }
 
 function volumeUp() {
